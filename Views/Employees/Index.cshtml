@@ -1,0 +1,23 @@
+@model IEnumerable<AgriEnergyConnect.Models.Employees>
+
+<h2>Employees</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var e in Model)
+        {
+            <tr>
+                <td>@e.EmployeeName</td>
+                <td>@e.Email</td>
+                <td>@e.Phone</td>
+            </tr>
+        }
+    </tbody>
+</table>
